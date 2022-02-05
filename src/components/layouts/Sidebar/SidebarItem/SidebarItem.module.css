@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-active {
+  background-color: var(--highlight);
+}

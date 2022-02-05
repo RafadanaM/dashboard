@@ -1,0 +1,44 @@
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #fff;
+  height: 4rem;
+  padding: 1rem 2rem;
+  box-shadow: 0px 3px 6px var(--shadow);
+  z-index: 20;
+}
+
+.right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  color: #727272;
+}
+
+.username {
+  font-size: 0.75rem;
+}
+
+.companyname {
+  font-size: 0.625rem;
+  font-weight: 300;
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+}
+
+.logout {
+  margin-left: 0.5rem;
+}
