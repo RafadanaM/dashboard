@@ -5,12 +5,13 @@ import classes from "./Content.module.css";
 import help from "../../../assets/images/Help.png";
 import { ReactComponent as Up } from "../../../assets/images/chevron-up.svg";
 import { bestSKU } from "../../../data";
+import Filter from "../../Filter/Filter";
 const Content = () => {
   return (
     <div className={classes.container}>
       <div className={classes.head}>
         <h1 className={classes.title}>Dashboard</h1>
-        <span>Custom date component</span>
+        <Filter />
       </div>
 
       <div className={`${classes.head} ${classes.sub}`}>
