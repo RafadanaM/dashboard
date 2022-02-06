@@ -10,7 +10,7 @@ const Navbar = () => {
           <span className={classes.username}>Username</span>
           <span className={classes.companyname}>Company Name </span>
         </div>
-        <Avatar fill="red" className={classes.avatar} />
+        <Avatar className={classes.avatar} />
         <img src={logout} alt="logout" className={classes.logout} />
       </div>
     </div>

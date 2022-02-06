@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3.75rem;
+  border: 0.5px solid var(--border);
+  border-radius: 4px;
+}
+
+.detail {
+  padding: 1rem 1.5rem 1rem 1rem;
+  flex: 1;
+}
+
+.amountContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #00000099;
+  margin-top: 0.5rem;
+}
+
+.container:first-child {
+  height: 5rem;
+  background-color: #ffe7bd;
+}
+
+.container:first-child > .imageContainer {
+  width: 5rem;
+  height: 5rem;
+}
+
+.container:first-child .amountContainer {
+  font-size: 0.875rem;
+}
+
+.container:first-child .name {
+  font-size: 1.25rem;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.imageContainer {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1rem;
+}
