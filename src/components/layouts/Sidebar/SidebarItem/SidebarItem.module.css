@@ -6,6 +6,6 @@
   align-items: center;
 }
 
-.container-active {
+.containerActive {
   background-color: var(--highlight);
 }
