@@ -10,7 +10,7 @@ const SalesCard = () => {
           <span className={classes.price}>Rp 3,600,000</span>
           <div className={classes.percentContainer}>
             <Down className={classes.down} />
-            <span>13.8%</span>
+            <span className={classes.percent}>13.8%</span>
             <span>last period in products sold</span>
           </div>
         </div>

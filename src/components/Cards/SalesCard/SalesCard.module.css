@@ -32,6 +32,11 @@
   margin-left: 0.75rem;
 }
 
+.percent {
+  color: var(--error);
+  font-weight: 700;
+}
+
 .down {
   width: 0.75rem;
   height: 0.75rem;

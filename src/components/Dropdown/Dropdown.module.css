@@ -1,0 +1,42 @@
+.container {
+  position: relative;
+  min-width: 8rem;
+  border: 0.5px solid var(--border);
+  border-radius: 2px;
+}
+
+.dropdownButton {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  font-size: 0.825rem;
+  column-gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown {
+  background-color: #fff;
+  left: 0;
+  top: 100%;
+  display: none;
+  font-size: 0.825rem;
+  border: 0.5px solid var(--border);
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2px 3px var(--shadow);
+}
+
+.dropdownActive {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown > div:not(:first-child) {
+  border-top: 0.5px solid var(--border);
+}
+
+.up {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,59 @@
+.container {
+  background-color: #fff;
+  border: 0.5px solid #ffe854;
+  padding: 0.5rem;
+  color: var(--text-primary);
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  font-size: 0.825rem;
+  font-weight: 500;
+}
+
+.property {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+
+.circle {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #ffe854;
+}
+
+.gross {
+  background-color: #289e45;
+}
+
+.nett {
+  background-color: #37b04c;
+}
+
+.apv {
+  background-color: #6be681;
+}
+
+.upt {
+  background-color: #707070;
+}
+
+.Gross {
+  color: #289e45;
+}
+
+.Nett {
+  color: #37b04c;
+}
+
+.APV {
+  color: #6be681;
+}
+
+.UPT {
+  color: #707070;
+}

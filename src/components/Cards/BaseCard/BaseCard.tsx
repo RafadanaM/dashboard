@@ -5,14 +5,21 @@ interface IBaseCard {
   children: ReactNode;
   title: string;
   titleStyle?: string | undefined;
+  items?: ReactNode[];
 }
 
-const BaseCard = ({ children, title, titleStyle }: IBaseCard) => {
+const BaseCard = ({ children, title, titleStyle, items }: IBaseCard) => {
+  const Items = () => {
+    return <>{items && items.map((item) => item)}</>;
+  };
   return (
     <div className={classes.container}>
       <div className={classes.head}>
         <span className={titleStyle || ""}>{title}</span>
-        <More className={classes.more} />
+        <div className={classes.moreContainer}>
+          <Items />
+          <More className={classes.more} />
+        </div>
       </div>
       {children}
     </div>

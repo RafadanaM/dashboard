@@ -42,3 +42,14 @@
 .logout {
   margin-left: 0.5rem;
 }
+
+.logoContainer {
+  width: max(275px, 20%);
+  height: 100%;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

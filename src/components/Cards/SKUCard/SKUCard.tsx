@@ -12,7 +12,7 @@ const SKUCard = ({ title, products }: ISKUCard) => {
       <BaseCard title={title} titleStyle={classes.title}>
         <div className={classes.items}>
           {products.map((product) => (
-            <SKUItem product={product} />
+            <SKUItem key={product.name} product={product} />
           ))}
         </div>
       </BaseCard>

@@ -43,6 +43,7 @@
   font-size: 0.825rem;
   text-decoration: underline;
   font-weight: 300;
+  cursor: pointer;
 }
 
 .main {
@@ -56,9 +57,5 @@
   margin-left: 0.5rem;
   stroke: #ffffff;
   stroke-width: 1;
-}
-
-.up:hover,
-.help:hover {
   cursor: pointer;
 }

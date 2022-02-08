@@ -1,6 +1,7 @@
 .container {
   display: flex;
   width: 100%;
+  height: 100%;
   flex-direction: column;
   background-color: #ffffff;
   border: 1px solid var(--border-light);
@@ -15,11 +16,15 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .more {
   width: 1.5rem;
   height: 1.5rem;
+  cursor: pointer;
 }
 
-.more:hover {
-  cursor: pointer;
+.moreContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
 }
