@@ -2,15 +2,21 @@ import classes from "./Filter.module.css";
 import calendar from "../../assets/images/calendar.png";
 import { ReactComponent as Down } from "../../assets/images/chevron-down.svg";
 import FilterModal from "./FilterModal/FilterModal";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FilterType } from "../../data";
 import dateToString from "../../utils/dateToString";
+import getDateRange from "../../utils/getDateRange";
 
 const Filter = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [filter, setFilter] = useState<FilterType>("Last 7 days");
   const [startDate, setStartDate] = useState<Date>(new Date());
   const [endDate, setEndDate] = useState<Date>(new Date());
+
+  useEffect(() => {
+    const { prevDate } = getDateRange("Last 7 days");
+    setStartDate(prevDate);
+  }, []);
 
   const handleFilterClick = () => {
     setIsOpen(true);
