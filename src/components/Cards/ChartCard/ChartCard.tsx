@@ -13,6 +13,7 @@ import {
 import Dropdown from "../../Dropdown/Dropdown";
 import CustomTooltip from "./CustomTooltip/CustomTooltip";
 import { chartData } from "../../../data";
+import { memo } from "react";
 const ChartCard = () => {
   return (
     <div className={classes.container}>
@@ -44,4 +45,4 @@ const ChartCard = () => {
   );
 };
 
-export default ChartCard;
+export default memo(ChartCard);

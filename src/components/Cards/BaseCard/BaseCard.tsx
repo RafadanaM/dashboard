@@ -10,7 +10,9 @@ interface IBaseCard {
 
 const BaseCard = ({ children, title, titleStyle, items }: IBaseCard) => {
   const Items = () => {
-    return <>{items && items.map((item) => item)}</>;
+    return (
+      <>{items && items.map((item, idx) => <div key={idx}>{item}</div>)}</>
+    );
   };
   return (
     <div className={classes.container}>
